@@ -204,4 +204,5 @@ UPDATE wp_posts SET post_content = replace(post_content, 'http://www.oldurl', 'h
 UPDATE wp_postmeta SET meta_value = replace(meta_value,'http://www.oldurl','http://www.newurl');
 ```
 
-### Lista de Caractéres Especiais da OWASP: https://www.owasp.org/index.php/Password_special_characters
+#### Fontes
+[Lista de Caractéres Especiais da OWASP](https://www.owasp.org/index.php/Password_special_characters)
