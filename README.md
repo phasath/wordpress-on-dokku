@@ -6,6 +6,10 @@ Esse template foi criado para realizar o deploy de um site WordPress do Dokku. F
 O template utiliza o `buildpack` oficial do [Heroku para PHP](https://github.com/heroku/heroku-buildpack-php) com algumas configurações específicas.
 Esse template também foi desenvolvido para suportar **apenas** um Wordpress, e não multi-sites.
 
+O NGINX desse repositório também foi modificado de forma a otimizar o uso do Wordpress, cacheamento e afins, além de incrementar a segurança do mesmo.
+
+> Esse template foi criado analisando o código fonte e funcionamento do Dokku, do Buildpack de PHP do Heroku e do Wordpress. Caso haja algum problema, abra uma [issue](https://github.com/phasath/wordpress-on-dokku/issues/new) para que possamos analisar.
+
 ## Requerimentos
 
 - Servidor com Dokku pré-configurado
