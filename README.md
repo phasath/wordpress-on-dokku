@@ -1,5 +1,8 @@
 # Deploy de Wordpress no Dokku
 
+## TODO
+- Criar versão em inglês da documentação
+
 ## Sobre o template
 
 Esse template foi criado para realizar o deploy de um site WordPress do Dokku. Foi testado no dia 11 de dezembro de 2018.
