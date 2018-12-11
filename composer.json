@@ -1,0 +1,24 @@
+{
+    "name": "FGV/DAPP",
+    "description": "Página Principal",
+    "keywords": ["Página Principal","FGV","DAPP"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "curl --silent --connect-timeout 30 --max-time 300 --location https://br.wordpress.org/wordpress-latest-pt_BR.tar.gz | tar xz",
+            "cp -Rf wordpress/* .",
+            "cp -R wordpress-config/* .",
+            "chmod -R 777 wp-content"
+       ]
+    },
+    "extra": {
+        "heroku": {
+            "newrelic": "false",
+            "nginx-includes": ["nginx.conf"]
+        }
+    }
+}
