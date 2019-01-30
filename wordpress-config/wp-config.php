@@ -18,6 +18,12 @@
  * @package WordPress
  */
 
+// ** Configuring upload size for Wordpress ** //
+@ini_set( 'upload_max_size' , '100M' );
+@ini_set( 'post_max_size', '100M');
+@ini_set( 'memory_limit', '100M' );
+@ini_set( 'max_execution_time', '1920');
+
 // ** MySQL settings - You can get this info from your web host ** //
 $url = parse_url(getenv('DATABASE_URL') ? getenv('DATABASE_URL') : getenv('CLEARDB_DATABASE_URL'));
 
